@@ -1,5 +1,43 @@
 {
   "Home": {
-    "title": "Olá, Mundo!"
+    "container": {
+      "header": {
+        "h1": "Carlos Silva",
+        "p": "Sou um desenvolvedor Front-end que transforma pixels em experiências."
+      },
+      "about-me": {
+        "h2": "Sobre mim",
+        "p": "Eu sou Carlos Eduardo e comecei a programar aos 14 anos. Gosto de acompanhar as últimas tendências e tecnologias para aprimorar os projetos em que trabalho. Estou sempre aprendendo e buscando novos desafios, o que mantém meu entusiasmo pela programação."
+      },
+      "skills": {
+        "h2": "Minhas habilidades",
+        "p": "JavaScript, React.js, Next.js, TypeScript, Design responsivo, Design intuitivo."
+      },
+      "more-about-me": {
+        "h2": "Explore Mais Sobre Mim",
+        "p-start": "Fique à vontade para explorar meu ",
+        "a-cv": "Currículo ",
+        "p-end": "ou acompanhar minhas ideias e experiências por meio dos meus posts no "
+      },
+      "projects": {
+        "h2": "Projetos",
+        "devkiit": {
+          "title": "DevKiit",
+          "subtitle": "Conjunto de ferramentas web.",
+          "description": "DevKiit é um conjunto de ferramentas para desenvolvedores e usuários em geral, oferecendo funcionalidades essenciais para otimizar o fluxo de trabalho. Tecnologias: Next.js, TypeScript, TailwindCSS, next-intl e Prettier."
+        },
+        "zen-homepage": {
+          "title": "ZEN HOMEPAGE",
+          "subtitle": "Homepage minimalista para navegadores.",
+          "description": "ZEN HOMEPAGE é uma homepage minimalista para navegadores, projetada para oferecer ferramentas práticas como conversões, calculadora, geração de senhas aleatórias, busca personalizada, e muito mais."
+        }
+      },
+      "footer": "Feito por Carlos."
+    }
+  },
+  "NotFound": {
+    "h2": "Página não encontrada.",
+    "p": "Perdido? Não se preocupe, até os melhores exploradores se perdem às vezes.",
+    "link": "Volte à página inicial!"
   }
 }
