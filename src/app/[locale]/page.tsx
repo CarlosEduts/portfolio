@@ -1,10 +1,16 @@
-import { Particles } from "@/components/ui/particles";
 import { useTranslations } from "next-intl";
+
+// Importing shadcn/ui components
+import { Particles } from "@/components/ui/particles";
+
+// Importing my components
+import NavBar from "./components/NavBar";
 
 export default function Home() {
   const t = useTranslations("Home");
   return (
-    <div className="dark">
+    <div>
+      <NavBar></NavBar>
       <Particles
         className="absolute inset-0"
         quantity={100}
