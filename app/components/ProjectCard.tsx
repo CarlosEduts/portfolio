@@ -7,7 +7,8 @@ type Props = {
   imageSrc: string;
   title: string;
   subtitle: string;
-  descriptio: string;
+  description: string;
+  tecnologies: string;
   deployUrl: string;
   codeUrl: string;
 };
@@ -16,7 +17,8 @@ export default function ProjectCard({
   imageSrc,
   title,
   subtitle,
-  descriptio,
+  description,
+  tecnologies,
   deployUrl,
   codeUrl,
 }: Props) {
@@ -33,7 +35,7 @@ export default function ProjectCard({
 
   return (
     <div className="project-box">
-      <div className="project-text">
+      <div className="project-text" onClick={openDrawer}>
         <Image
           src={imageSrc}
           width={150}
@@ -46,8 +48,8 @@ export default function ProjectCard({
           <p>{subtitle}</p>
         </div>
       </div>
-      <div className="project-actions">
-        <button onClick={openDrawer} title={`${title} Drawer`}>
+      <div className="project-actions" onClick={openDrawer}>
+        <button title={`${title} Drawer`}>
           <IconPlayerPlay stroke={2} />
         </button>
       </div>
@@ -70,7 +72,8 @@ export default function ProjectCard({
 
               <div>
                 <h3>{title}</h3>
-                <p>{descriptio}</p>
+                <p>{description}</p>
+                <p className="project-tecnologies">{tecnologies}</p>
               </div>
             </div>
           </div>

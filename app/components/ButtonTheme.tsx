@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { IconSun, IconSunOff } from "@tabler/icons-react";
+import { IconSun, IconMoon } from "@tabler/icons-react";
 
 export default function ButtonTheme() {
   const [theme, setTheme] = useState("light");
@@ -22,7 +22,7 @@ export default function ButtonTheme() {
   return (
     <button id="theme-toggle" title="Alterar o tema" onClick={toggleTheme}>
       {theme === "dark" ? (
-        <IconSunOff stroke={2} className="header-icon" />
+        <IconMoon stroke={2} className="header-icon" />
       ) : (
         <IconSun stroke={2} className="header-icon" />
       )}

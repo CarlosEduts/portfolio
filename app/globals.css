@@ -1,3 +1,6 @@
+/* ==========================================================================
+   Variáveis Globais
+   ========================================================================== */
 :root {
   --foreground: #0d1b2a;
   --foreground-90: rgba(22, 22, 24, 0.8);
@@ -14,6 +17,15 @@
   --background: #0a141e;
 }
 
+/* ==========================================================================
+     Reset e Estilos Globais
+     ========================================================================== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   font-size: 16px;
 }
@@ -25,18 +37,15 @@ body {
   transition: all 500ms;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
 
+/* ==========================================================================
+     Tipografia e Elementos Básicos
+     ========================================================================== */
 h1 {
   font-size: 2rem;
   color: var(--blue);
@@ -64,6 +73,7 @@ a {
   text-decoration: none;
   transition: all 200ms;
 }
+
 button {
   transition: all 200ms;
 }
@@ -73,7 +83,9 @@ a:hover {
   opacity: 0.4;
 }
 
-/* Personalização da barra de scroll */
+/* ==========================================================================
+     Personalização da Barra de Scroll
+     ========================================================================== */
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
@@ -92,7 +104,9 @@ a:hover {
   background: rgba(100, 100, 100, 0.7);
 }
 
-/* container Styles */
+/* ==========================================================================
+     Container e Layout Base
+     ========================================================================== */
 .container {
   display: flex;
   flex-direction: column;
@@ -100,16 +114,18 @@ a:hover {
   justify-content: center;
   gap: 3.5rem;
   padding: 1rem;
-
-  header,
-  section,
-  footer {
-    width: 100%;
-    max-width: 750px;
-  }
 }
 
-/* Primary header-actions */
+.container header,
+.container section,
+.container footer {
+  width: 100%;
+  max-width: 750px;
+}
+
+/* ==========================================================================
+     Header Actions
+     ========================================================================== */
 .header-actions {
   width: 100%;
   top: 0;
@@ -146,7 +162,9 @@ a:hover {
   padding: 0;
 }
 
-/* header Styles */
+/* ==========================================================================
+     Header e Perfil
+     ========================================================================== */
 header {
   display: flex;
   align-items: center;
@@ -175,6 +193,9 @@ header p {
   margin-top: 0.2rem;
 }
 
+/* ==========================================================================
+     Ações de Página e Contatos
+     ========================================================================== */
 .page-actions-box {
   display: flex;
   align-items: center;
@@ -188,8 +209,7 @@ header p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.1rem;
-  padding-right: 0.3rem;
+  padding: 0.1rem 0.3rem 0.1rem 0.1rem;
   border: none;
   background: none;
   color: var(--blue);
@@ -212,7 +232,9 @@ header p {
   justify-content: center;
 }
 
-/* more-about-me Styles */
+/* ==========================================================================
+     Seção "More About Me"
+     ========================================================================== */
 .more-about-me a {
   padding: 0;
 }
@@ -222,7 +244,9 @@ header p {
   padding-right: 0.1rem;
 }
 
-/* projects Styles */
+/* ==========================================================================
+     Projetos
+     ========================================================================== */
 .projects,
 .project-text {
   display: flex;
@@ -252,7 +276,6 @@ header p {
 }
 
 .project-text {
-  display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
@@ -277,24 +300,27 @@ header p {
 }
 
 .projects > p {
-  margin-top: -1rem; /* Valor negativo para aproximar o paragrafo da box de projeto */
+  margin-top: -1rem; /* Valor negativo para aproximar o parágrafo da box de projeto */
 }
 
 .projects > p > a {
   padding: 0;
 }
 
-/* footer Styles */
+/* ==========================================================================
+     Footer
+     ========================================================================== */
 footer > p {
   text-align: center;
   font-size: 0.8rem;
 }
 
-/* Project drawer */
+/* ==========================================================================
+     Project Drawer
+     ========================================================================== */
 .project-drawer {
   height: 100dvh;
   top: 0;
-
   position: fixed;
   width: 100%;
   max-width: 750px;
@@ -303,18 +329,16 @@ footer > p {
   flex-direction: column;
   align-items: end;
   justify-content: end;
-
   background: linear-gradient(
     0deg,
     var(--background) 30%,
-    
     rgba(0, 212, 255, 0) 100%
   );
 }
 
 .project-drawer > div {
   width: 100%;
-  height: calc(100% - 400px);
+  height: calc(100% - 430px);
 }
 
 .project-drawer-closed {
@@ -323,7 +347,7 @@ footer > p {
 
 .project-drawer > .project-drawer-content {
   width: 100%;
-  height: 400px;
+  height: 430px;
   background-color: var(--background);
   border: 1px solid var(--grey);
   border-radius: 2rem 2rem 0 0;
@@ -332,16 +356,15 @@ footer > p {
   justify-content: center;
   flex-direction: column;
   padding: 1rem 0.5rem;
-  animation: drawer-open 300ms 1 ease-out;
+  animation: drawer-open 300ms ease-out;
 }
 
 @keyframes drawer-open {
   0% {
-    height: 0px;
+    height: 0;
   }
-
   100% {
-    height: 400px;
+    height: 430px;
   }
 }
 
@@ -369,10 +392,23 @@ footer > p {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
   text-align: center;
+}
+
+.drawer-project-text > div > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.project-tecnologies {
+  width: fit-content;
+  background-color: var(--grey);
+  padding: 0 0.3rem;
+  margin-top: 0.4rem;
+  border-radius: 0.2rem;
 }
 
 .drawer-project-img {
@@ -383,7 +419,9 @@ footer > p {
   padding: 1rem 0;
 }
 
-/* Page404 */
+/* ==========================================================================
+     Página 404
+     ========================================================================== */
 .page404 {
   width: 100%;
   height: 100dvh;
@@ -398,7 +436,9 @@ footer > p {
   max-width: 400px;
 }
 
-/* Responsividade para telas Pequenas */
+/* ==========================================================================
+     Responsividade para Telas Pequenas
+     ========================================================================== */
 @media (max-width: 767px) {
   html {
     font-size: 14px;

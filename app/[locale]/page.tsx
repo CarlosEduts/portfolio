@@ -14,6 +14,7 @@ export default function Home() {
   const t = useTranslations("Home");
   return (
     <div>
+      {/* Nav Bar */}
       <header className="header-actions">
         <div>
           <div className="page-actions-box">
@@ -112,19 +113,11 @@ export default function Home() {
           <h2>{t("container.projects.h2")}</h2>
 
           <ProjectCard
-            imageSrc="/projects/linkioo.png"
-            title={t("container.projects.linkioo.title")}
-            subtitle={t("container.projects.linkioo.subtitle")}
-            descriptio={t("container.projects.linkioo.description")}
-            deployUrl="https://www.lkoo.xyz/"
-            codeUrl="https://github.com/CarlosEduts/linkioo"
-          />
-
-          <ProjectCard
             imageSrc="/projects/devkiit.png"
             title={t("container.projects.devkiit.title")}
             subtitle={t("container.projects.devkiit.subtitle")}
-            descriptio={t("container.projects.devkiit.description")}
+            description={t("container.projects.devkiit.description")}
+            tecnologies="Next.js, TypeScript, next-intl(Idiomas: EN, PT), TailwindCSS, Vercel."
             deployUrl="https://devkiit.vercel.app/"
             codeUrl="https://github.com/CarlosEduts/dev-kiit"
           />
@@ -133,7 +126,8 @@ export default function Home() {
             imageSrc="/projects/zen-homepage.png"
             title={t("container.projects.zen-homepage.title")}
             subtitle={t("container.projects.zen-homepage.subtitle")}
-            descriptio={t("container.projects.zen-homepage.description")}
+            description={t("container.projects.zen-homepage.description")}
+            tecnologies="JavaScript, CSS, HTML"
             deployUrl="https://zen-homepage.vercel.app/"
             codeUrl="https://github.com/CarlosEduts/zen-homepage"
           />

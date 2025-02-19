@@ -21,15 +21,10 @@
       },
       "projects": {
         "h2": "Projects",
-        "linkioo": {
-          "title": "Linkioo",
-          "subtitle": "A simple, fast, and efficient link shortener.",
-          "description": "Linkioo is a simple, fast, and efficient link shortener. With it, you can transform long URLs into short, easy-to-share links. Technologies: Next.js, TypeScript, next-intl (Languages: EN, PT), MongoDB Atlas, TailwindCSS, and Vercel."
-        },
         "devkiit": {
           "title": "DevKiit",
           "subtitle": "A set of web tools.",
-          "description": "DevKiit is a set of tools for developers and general users, offering essential functionalities to optimize workflow. Technologies: Next.js, TypeScript, TailwindCSS, next-intl, and Prettier."
+          "description": "DevKiit is a set of tools for developers and general users, offering essential functionalities to optimize workflow."
         },
         "zen-homepage": {
           "title": "ZEN HOMEPAGE",
@@ -41,9 +36,8 @@
     }
   },
   "NotFound": {
-  "h2": "Page not found.",
-  "p": "Lost? Don't worry, even the best explorers get lost sometimes.",
-  "link": "Go back to the homepage!"
-}
-
+    "h2": "Page not found.",
+    "p": "Lost? Don't worry, even the best explorers get lost sometimes.",
+    "link": "Go back to the homepage!"
+  }
 }
