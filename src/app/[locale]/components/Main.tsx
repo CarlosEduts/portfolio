@@ -64,7 +64,7 @@ export default function Main() {
             {t("container.more-about-me.p-start")}
             <a
               className="text-primary font-bold hover:opacity-60"
-              href="/doc/cv.html"
+              href="https://cv.carlosdev.top/"
               target="_blank"
             >
               {t("container.more-about-me.a-cv")}
