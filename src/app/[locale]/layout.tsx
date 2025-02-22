@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "../globals.css";
+import { Analytics } from '@vercel/analytics/next';
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default async function LocaleLayout({
       <body className={`${roboto.variable}`}>
         <NextIntlClientProvider messages={messages}>
           {children}
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
