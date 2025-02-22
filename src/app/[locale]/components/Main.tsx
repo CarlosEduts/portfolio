@@ -33,7 +33,7 @@ export default function Main() {
       title: t(path + "dev-links.title"),
       subtitle: t(path + "dev-links.subtitle"),
       description: t(path + "dev-links.description"),
-      tecnologies: "JavaScript, HTML e CSS",
+      tecnologies: "Next.js, TypeScript, TailwindCSS, shadcn/ui e Prettier.",
       deploy: "https://links.carlosdev.top/",
       gitHub: "https://github.com/CarlosEduts/dev-links",
     },
