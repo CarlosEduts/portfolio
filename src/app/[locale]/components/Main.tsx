@@ -8,6 +8,37 @@ import { Project } from "./Project";
 export default function Main() {
   const t = useTranslations("Home");
 
+  const path = "container.projects.";
+  const projects = [
+    {
+      image: "/projects-images/devkiit.png",
+      title: t(path + "devkiit.title"),
+      subtitle: t(path + "devkiit.subtitle"),
+      description: t(path + "devkiit.description"),
+      tecnologies: "Next.js, TypeScript, TailwindCSS, shadcn/ui e Prettier.",
+      deploy: "https://kiit.carlosdev.top/",
+      gitHub: "https://github.com/CarlosEduts/devkiit",
+    },
+    {
+      image: "/projects-images/zen-homepage.png",
+      title: t(path + "zen-homepage.title"),
+      subtitle: t(path + "zen-homepage.subtitle"),
+      description: t(path + "zen-homepage.description"),
+      tecnologies: "JavaScript, HTML e CSS",
+      deploy: "https://zen-homepage.vercel.app/",
+      gitHub: "https://github.com/CarlosEduts/zen-homepage",
+    },
+    {
+      image: "/projects-images/dev-links.png",
+      title: t(path + "dev-links.title"),
+      subtitle: t(path + "dev-links.subtitle"),
+      description: t(path + "dev-links.description"),
+      tecnologies: "JavaScript, HTML e CSS",
+      deploy: "https://links.carlosdev.top/",
+      gitHub: "https://github.com/CarlosEduts/dev-links",
+    },
+  ];
+
   return (
     <div className="mt-32 flex flex-col gap-12 tracking-wide">
       {/* Header */}
@@ -64,7 +95,7 @@ export default function Main() {
             {t("container.more-about-me.p-start")}
             <a
               className="text-primary font-bold hover:opacity-60"
-              href="https://cv.carlosdev.top/"
+              href="/cv.html"
               target="_blank"
             >
               {t("container.more-about-me.a-cv")}
@@ -88,15 +119,17 @@ export default function Main() {
           {t("container.projects.h2")}
         </h2>
 
-        <Project
-          imageSrc="/projects-images/devkiit.png"
-          title={t("container.projects.devkiit.title")}
-          subtitle={t("container.projects.devkiit.subtitle")}
-          description={t("container.projects.devkiit.description")}
-          tecnologies="Next.js, TypeScript, TailwindCSS, next-intl e Prettier."
-          deployUrl="https://devkiit.vercel.app/"
-          gitHubUrl="https://github.com/CarlosEduts/dev-kiit"
-        />
+        {projects.map((project) => (
+          <Project
+            imageSrc={project.image}
+            title={project.title}
+            subtitle={project.subtitle}
+            description={project.description}
+            tecnologies={project.tecnologies}
+            deployUrl={project.deploy}
+            gitHubUrl={project.gitHub}
+          />
+        ))}
       </section>
     </div>
   );

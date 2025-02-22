@@ -19,7 +19,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt">
+    <html lang="en">
       <body className={`${roboto.variable}`}>{children}</body>
     </html>
   );

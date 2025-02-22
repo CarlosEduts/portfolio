@@ -43,7 +43,7 @@ export function Project({
   return (
     <Drawer>
       <DrawerTrigger className="w-full">
-        <div className="w-full flex  gap-4 bg-foreground/10 items-center justify-between rounded-md px-4 py-5 hover:bg-foreground/5">
+        <div className="w-full flex  gap-4 bg-foreground/10 items-center justify-between rounded-md px-4 py-5 hover:bg-foreground/5 mb-4">
           <div className="flex gap-2">
             <Image
               src={imageSrc}
@@ -76,7 +76,7 @@ export function Project({
             width={150}
             height={150}
             alt={`${title} project image`}
-            className="bg-foreground w-full max-w-48 rounded-md mx-auto"
+            className="bg-foreground w-full h-full max-w-48 rounded-md mx-auto"
           />
 
           <DrawerTitle className="text-center">{title}</DrawerTitle>
@@ -92,22 +92,22 @@ export function Project({
 
         <DrawerFooter>
           <div className="flex items-center justify-center gap-3">
-            <Button className="bg-foreground/10 px-4 py-2 rounded-full text-primary hover:text-white font-bold">
+            <Button className="bg-foreground/10 px-4 py-2 rounded-full text-primary hover:text-white font-bold" onClick={() => {
+                  openLink(gitHubUrl);
+                }}>
               <IconBrandGithub
                 stroke={2}
-                onClick={() => {
-                  openLink(gitHubUrl);
-                }}
+                
               />{" "}
               GitHub
             </Button>
 
-            <Button className="bg-foreground/10 px-4 py-2 rounded-full text-primary hover:text-white font-bold">
+            <Button className="bg-foreground/10 px-4 py-2 rounded-full text-primary hover:text-white font-bold" onClick={() => {
+                  openLink(deployUrl);
+                }}>
               <IconPlayerPlay
                 stroke={2}
-                onClick={() => {
-                  openLink(deployUrl);
-                }}
+                
               />{" "}
               Deploy
             </Button>

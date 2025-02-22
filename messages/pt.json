@@ -30,6 +30,11 @@
           "title": "ZEN HOMEPAGE",
           "subtitle": "Homepage minimalista para navegadores.",
           "description": "ZEN HOMEPAGE é uma homepage minimalista para navegadores, projetada para oferecer ferramentas práticas como conversões, calculadora, geração de senhas aleatórias, busca personalizada, e muito mais."
+        },
+        "dev-links": {
+          "title": "Dev Links",
+          "subtitle": "Plataforma que centraliza conteúdos para desenvolvedores.",
+          "description": "O Dev Links é uma plataforma que centraliza conteúdos gratuitos para desenvolvedores. Aqui você encontra cursos, livros, desafios, tutoriais e documentações organizados por categorias."
         }
       },
       "footer": "Feito por Carlos."

@@ -1,5 +1,48 @@
 {
   "Home": {
-    "title": "Hello world!"
+    "container": {
+      "header": {
+        "h1": "Carlos Silva",
+        "p": "I am a Front-end developer who transforms pixels into experiences."
+      },
+      "about-me": {
+        "h2": "About me",
+        "p": "I am Carlos Eduardo and I started programming at the age of 14. I enjoy keeping up with the latest trends and technologies to enhance the projects I work on. I am always learning and seeking new challenges, which keeps my passion for programming alive."
+      },
+      "skills": {
+        "h2": "My skills",
+        "p": "JavaScript, React.js, Next.js, TypeScript, Responsive design, Intuitive design."
+      },
+      "more-about-me": {
+        "h2": "Explore More About Me",
+        "p-start": "Feel free to explore my ",
+        "a-cv": "Resume ",
+        "p-end": "or follow my ideas and experiences through my posts on "
+      },
+      "projects": {
+        "h2": "Projects",
+        "devkiit": {
+          "title": "DevKiit",
+          "subtitle": "A set of web tools.",
+          "description": "DevKiit is a suite of tools for developers and general users, offering essential functionalities to optimize workflow."
+        },
+        "zen-homepage": {
+          "title": "ZEN HOMEPAGE",
+          "subtitle": "Minimalist homepage for browsers.",
+          "description": "ZEN HOMEPAGE is a minimalist homepage for browsers, designed to offer practical tools such as conversions, a calculator, random password generation, custom search, and much more."
+        },
+        "dev-links": {
+          "title": "Dev Links",
+          "subtitle": "Platform that centralizes content for developers.",
+          "description": "Dev Links is a platform that centralizes free content for developers. Here you will find courses, books, challenges, tutorials, and documentation organized by categories."
+        }
+      },
+      "footer": "Made by Carlos."
+    }
+  },
+  "NotFound": {
+    "h2": "Page not found.",
+    "p": "Lost? Don't worry, even the best explorers get lost sometimes.",
+    "link": "Return to the homepage!"
   }
 }
