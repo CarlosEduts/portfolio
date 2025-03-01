@@ -45,8 +45,8 @@ export default function Main() {
       <header className="flex items-center gap-3">
         <Image
           src="/profile-img.jpg"
-          width={400}
-          height={400}
+          width={300}
+          height={300}
           alt="Profile dev image"
           className="w-full max-w-36 rounded-full shadow-2xl profile-img"
         />

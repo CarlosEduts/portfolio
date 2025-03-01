@@ -32,6 +32,7 @@ export default function NavBar() {
       <div className="w-full max-w-screen-md h-14 bg-background/20 flex items-center justify-between border border-foreground/10 px-4 rounded-sm backdrop-blur-md">
         <div className="flex gap-2 items-center">
           <button
+            title="Page theme"
             onClick={() => {
               toggleTheme();
             }}

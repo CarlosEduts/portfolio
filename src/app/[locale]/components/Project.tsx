@@ -47,8 +47,8 @@ export function Project({
           <div className="flex gap-2">
             <Image
               src={imageSrc}
-              width={150}
-              height={150}
+              width={50}
+              height={50}
               alt={`${title} project image`}
               className="w-16 h-16 rounded-sm"
             />
@@ -92,24 +92,22 @@ export function Project({
 
         <DrawerFooter>
           <div className="flex items-center justify-center gap-3">
-            <Button className="bg-foreground/10 px-4 py-2 rounded-full text-primary hover:text-white font-bold" onClick={() => {
-                  openLink(gitHubUrl);
-                }}>
-              <IconBrandGithub
-                stroke={2}
-                
-              />{" "}
-              GitHub
+            <Button
+              className="bg-foreground/10 px-4 py-2 rounded-full text-primary hover:text-white font-bold"
+              onClick={() => {
+                openLink(gitHubUrl);
+              }}
+            >
+              <IconBrandGithub stroke={2} /> GitHub
             </Button>
 
-            <Button className="bg-foreground/10 px-4 py-2 rounded-full text-primary hover:text-white font-bold" onClick={() => {
-                  openLink(deployUrl);
-                }}>
-              <IconPlayerPlay
-                stroke={2}
-                
-              />{" "}
-              Deploy
+            <Button
+              className="bg-foreground/10 px-4 py-2 rounded-full text-primary hover:text-white font-bold"
+              onClick={() => {
+                openLink(deployUrl);
+              }}
+            >
+              <IconPlayerPlay stroke={2} /> Deploy
             </Button>
           </div>
         </DrawerFooter>
