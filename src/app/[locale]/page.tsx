@@ -26,8 +26,7 @@ export default function Home() {
 
         <footer>
           <p className="text-center mt-12 text-sm">
-            {" "}
-            &copy; 2025 - {t("container.footer")}
+            &copy; {new Date().getFullYear()} - {t("container.footer")}
           </p>
         </footer>
       </div>
