@@ -5,7 +5,7 @@ import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "../globals.css";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -14,7 +14,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Carlos Eduardo - Desenvolvedor Frontend",
+  title: "Carlos Silva: desenvolvedor Front-end.",
   description: "Carlos Silva, desenvolvedor Front-end. Explore meu portfólio.",
 };
 
